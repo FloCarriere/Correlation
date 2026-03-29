@@ -1,5 +1,14 @@
-<div>test</div>
-<div style="display: block; width: 1000px">
-  <canvas baseChart [data]="lineChartData" [options]="lineChartOptions" [type]="'line'"> </canvas>
+<div>
+  <p>début du graph</p>
 </div>
-<div>test</div>
+
+<div class="chart">
+  @if (lineChartData) {
+    <canvas baseChart [data]="lineChartData" [options]="lineChartOptions" [type]="'line'"> </canvas>
+  } @else {
+    <p>Chargement des données...</p>
+  }
+</div>
+<div>
+  <p>fin du graph</p>
+</div>
