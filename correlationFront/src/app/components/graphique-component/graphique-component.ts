@@ -1,8 +1,7 @@
-import { Component, ViewChild, OnInit, ChangeDetectorRef } from '@angular/core'; // 1. Importe ChangeDetectorRef
-import { ChartConfiguration, ChartData, ChartType, Chart, registerables } from 'chart.js';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core'; // 1. Importe ChangeDetectorRef
+import { ChartConfiguration, ChartData, Chart, registerables } from 'chart.js';
 import { MesureService } from '../../services/mesure-service';
 //import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
 import { BaseChartDirective } from 'ng2-charts';
 
 @Component({
